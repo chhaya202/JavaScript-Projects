@@ -1,0 +1,50 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel=""
+    <title>Click Counter</title>
+</head>
+<body>
+    <h2>Click Counter</h2>
+    <p> Count: <span id="count">0</span></p>
+    <button onclick="increase()">Click me</button>
+    <script>
+        let count=0;
+        function increase(){
+            count++
+            document.getElementById("count").innerHTML =count;
+        }
+    </script>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click Counter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Click Counter</h2>
+
+        <p>Count: <span id="count">0</span></p>
+
+        <button onclick="increase()">Click Me</button>
+    </div>
+
+    <script>
+        let count = 0;
+
+        function increase() {
+            count++;
+            document.getElementById("count").textContent = count;
+        }
+    </script>
+
+</body>
+</html>
